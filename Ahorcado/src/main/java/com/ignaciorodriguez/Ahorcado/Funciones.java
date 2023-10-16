@@ -3,6 +3,15 @@ package com.ignaciorodriguez.Ahorcado;
 import javax.swing.JOptionPane;
 
 public class Funciones {
+	
+	public static char obtenerLetra(String mensaje) {
+
+        String entrada = JOptionPane.showInputDialog(mensaje);
+        if (entrada == null || entrada.length() == 0) {
+            return obtenerLetra(mensaje);
+        }
+        return entrada.charAt(0);
+    }
 	public static String dibujarAhorcado(byte intentos) {
 		String dibujo = "";
 		switch (intentos) {
@@ -37,10 +46,9 @@ public class Funciones {
 
 			break;
 		}
-		return dibujo.toString();
+		return dibujo;
 	}
 
-	//determinar si todas las letras de la palabra secreta han sido adivinadas
 	public static boolean palabraAdivinada(char[] letrasAdivinadas) {
 		for (char c : letrasAdivinadas) {
 			if (c == '_') {
@@ -50,13 +58,6 @@ public class Funciones {
 		return true;
 	}
 	
-	public static char obtenerLetra(String mensaje) {
-        String entrada = JOptionPane.showInputDialog(mensaje);
-        if (entrada == null || entrada.length() == 0) {
-            // El usuario presionó "Cancelar" o no ingresó nada
-            return obtenerLetra(mensaje);
-        }
-        return entrada.charAt(0);
-    }
+
 
 }

@@ -5,16 +5,15 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-
 public class Principal {
 
 	public static void main(String[] args) {
-		//TODO cambiar las palabras añadir mas, opcion de adivinar la palabra del tiron, mejorar funciones
-		Scanner sc = new Scanner(System.in);
-		String[] palabras = { "java", "gato", "perro", "mundo" };
+		String[] palabras = { "agua", "calco", "mastodonte", "gimnasio", "fuerte", "tremendo", "mundo" };
 		Random r = new Random();
-		String palabraCorrecta = palabras[r.nextInt(palabras.length)];
+		Scanner sc = new Scanner(System.in);
 		byte intentos = 6;
+		String palabraCorrecta = palabras[r.nextInt(palabras.length)];
+
 		boolean juegoTerminado = false;
 		char[] letrasAdivinadas = new char[palabraCorrecta.length()];
 
@@ -26,8 +25,7 @@ public class Principal {
 
 		do {
 			String palabraActual = new String(letrasAdivinadas);
-			String mensaje = "Palabra secreta: " + palabraActual + "\nIntentos restantes: " + intentos
-					+ "\nIngresa una letra:";
+			String mensaje = "La palabra: " + palabraActual + "\nVidas: " + intentos + "\nTu letra:";
 			char letra = Character.toLowerCase(Funciones.obtenerLetra(mensaje));
 			boolean letraAdivinada = false;
 
@@ -38,7 +36,7 @@ public class Principal {
 				}
 			}
 
-			if (!letraAdivinada) {
+			if (letraAdivinada == false) {
 				intentos--;
 				JOptionPane.showMessageDialog(null, "¡Letra incorrecta!" + "\n" + Funciones.dibujarAhorcado(intentos));
 
@@ -48,9 +46,9 @@ public class Principal {
 
 			if (juegoTerminado) {
 				if (Funciones.palabraAdivinada(letrasAdivinadas)) {
-					JOptionPane.showMessageDialog(null, "¡Felicidades! Has adivinado la palabra: " + palabraCorrecta);
+					JOptionPane.showMessageDialog(null, "¡Tremendo crack, has ganado¡ " + palabraCorrecta);
 				} else {
-					JOptionPane.showMessageDialog(null, "¡Perdiste! La palabra secreta era: " + palabraCorrecta);
+					JOptionPane.showMessageDialog(null, "Una lastima, te has ahorcado owo " + palabraCorrecta);
 				}
 			}
 
