@@ -22,7 +22,7 @@ public class Principal {
 		}
 
 		JOptionPane.showMessageDialog(null, "Vamos a jugar al ahorcado, intenta adivinar la palabra");
-
+ 
 		do {
 			String palabraActual = new String(letrasAdivinadas);
 			String mensaje = "La palabra: " + palabraActual + "\nVidas: " + intentos + "\nTu letra:";
