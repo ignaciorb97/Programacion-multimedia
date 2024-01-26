@@ -90,8 +90,8 @@ class MainActivity : AppCompatActivity() {
             val result = when (operador) {
                 "+" -> operador1 + operador2
                 "-" -> operador1 - operador2
-                "*" -> operador1 * operador2
-                "/" -> if (operador2 != 0.0) operador1 / operador2 else Double.NaN
+                "X" -> operador1 * operador2
+                "÷" -> if (operador2 != 0.0) operador1 / operador2 else Double.NaN
                 else -> Double.NaN
             }
 
