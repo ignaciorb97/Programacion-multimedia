@@ -12,7 +12,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="CITA MÉDICA"
+        android:text="Videos JAJÁ"
         android:textAlignment="center"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,54 +44,66 @@
         app:layout_constraintTop_toBottomOf="@+id/Nombre" />
 
     <EditText
-        android:id="@+id/Fecha"
+        android:id="@+id/Direccion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:minHeight="48dp"
-        android:hint="Fecha"
+        android:hint="Direccion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Apellidos" />
 
     <EditText
-        android:id="@+id/Contraseña"
+        android:id="@+id/CodigoPostal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:minHeight="48dp"
-        android:hint="Contraseña"
+        android:hint="Codigo Postal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fecha" />
+        app:layout_constraintTop_toBottomOf="@+id/Direccion" />
 
     <EditText
-        android:id="@+id/ConfirmContraseña"
+        android:id="@+id/Ciudad"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:minHeight="48dp"
-        android:hint="Confirmar contraseña"
+        android:hint="Ciudad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/CodigoPostal" />
 
     <EditText
-        android:id="@+id/Especialista"
+        android:id="@+id/Provincia"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:minHeight="48dp"
-        android:hint="Especialista"
+        android:hint="Provincia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ConfirmContraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/Ciudad" />
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Provincia" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
@@ -104,53 +116,21 @@
         app:cardBackgroundColor="#44F413"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Especialista">
+        app:layout_constraintTop_toBottomOf="@+id/Telefono">
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="4099dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:gravity="center"
-                android:text="CITA URGENTE"
-                android:textColor="#000000"
-                android:textSize="30dp"
-
-                />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <TextView
+    <TextView
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="16dp"
             android:gravity="center"
-            android:text="CITA URGENTE"
+            android:text="Entrar"
             android:textColor="#000000"
             android:textSize="30dp"
 
             />
     </androidx.cardview.widget.CardView>
-
-
-
-
-    <Button
-        android:id="@+id/btnEntrar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="ENTRAR"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv"
-        android:textColor="#000000"
-        />
 
 
 

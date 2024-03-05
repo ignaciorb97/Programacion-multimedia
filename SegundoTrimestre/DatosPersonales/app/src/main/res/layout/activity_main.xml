@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Videos JAJÁ"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <EditText
+        android:id="@+id/Apellidos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+    <EditText
+        android:id="@+id/Direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Apellidos" />
+
+    <EditText
+        android:id="@+id/CodigoPostal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Codigo Postal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Direccion" />
+
+    <EditText
+        android:id="@+id/Ciudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CodigoPostal" />
+
+    <EditText
+        android:id="@+id/Provincia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Provincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ciudad" />
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:hint="Telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Provincia" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#44F413"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Telefono">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Entrar"
+            android:textColor="#000000"
+            android:textSize="30dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
